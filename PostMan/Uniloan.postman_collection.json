@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "6f603b51-1c02-4ea8-be91-32bb7801bbcc",
+		"name": "Uniloan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31408461"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Add Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\": \"NomClient\",\r\n  \"prenom\": \"PrenomClient\",\r\n  \"email\": \"client@email.com\",\r\n  \"numero\": \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/client/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\": \"NomClient\",\r\n  \"prenom\": \"PrenomClient\",\r\n  \"email\": \"client@email.com\",\r\n  \"numero\": \"123456789\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/client/sendmail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"sendmail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/client/get",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
